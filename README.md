@@ -1,2 +1,2 @@
-# landings
-Landing layouts from RS School
+# Landings layouts from RS School
+
