@@ -1,0 +1,34 @@
+.header {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 42px 0;
+  }
+  &__logo {
+    @include text-style(16px, 400, "Inika");
+    display: flex;
+    align-items: flex-end;
+
+  }
+  // &__nav {
+  // }
+}
+.nav {
+  &__menu {
+    display: flex;
+  }
+  &__item {
+    margin-right: 46px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  &__link {
+    transition: .3s;
+    @include text-style(16px, 700, "Inika");
+    &:hover {
+      color: $color-accent;
+    }
+  } 
+}

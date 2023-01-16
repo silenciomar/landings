@@ -1,0 +1,12 @@
+{
+  "name": "plants",
+  "version": "1.0.0",
+  "description": "plants landing",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch ./assets/sass/style.scss ./style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "silenciomar",
+  "license": "ISC"
+}
