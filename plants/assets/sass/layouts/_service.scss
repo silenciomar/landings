@@ -1,0 +1,68 @@
+.service {
+  &__container {
+    padding: 40px;
+    padding-bottom: 121px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__tag-container {
+    display: flex;
+    align-items: center;
+  }
+  &__title {
+    width: 306px;
+    @include text-style(40px, 400, "Inika");
+    line-height: 52px;
+    color: $color-title-accent;
+    margin-right: 140px;
+  }
+  &__tags {
+    & button {
+      @include text-style(20px, 400, "Inika");
+      line-height: 26px;
+      color: $color-accent;
+      border: 1px solid $color-accent;
+      border-radius: 5px;
+      padding: 12px 40px;
+      transition: .3s all;
+      margin-right: 38px;
+      &:hover {
+        background-color: $color-accent;
+        color: $color-white;
+      }
+    }
+  } 
+  &__cards {
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    justify-content: space-between;
+    gap: 55px 116px;
+  }
+}
+.card {
+  &__img {
+    border-radius: 20px 20px 0px 0px;
+  }
+  &__info {
+    padding-top: 10px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid #E3E1D5;
+    border-left: 1px solid #E3E1D5;
+    border-right: 1px solid #E3E1D5;
+    border-radius: 0px 0px 20px 20px;
+  }
+  &__title {
+    @include text-style(20px, 700, "Inter");
+    line-height: 20px;
+    text-align: center;
+    color: $color-accent;
+    margin-bottom: 10px;
+  }
+  &__text {
+    @include text-style(16px, 400, "Inter");
+    line-height: 20px;
+    text-align: center;
+    color: $color-title;
+  }
+}

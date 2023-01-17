@@ -1,0 +1,31 @@
+.about {
+  background-color: $color-white;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 93px;
+    padding-bottom: 94px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    margin-right: 153px;
+  }
+  &__title {
+    @include text-style(40px, 400, "Inika");
+    line-height: 52px;
+    color: $color-title-accent;
+    & span {
+      color: $color-accent;
+    }
+  }
+  &__text {
+    @include text-style(20px, 400, "Inter");
+    line-height: 30px;
+    color: $color-text;
+    margin-top: 40px;
+  }
+  // &__img {
+  // }
+}

@@ -1,0 +1,16 @@
+.contacts {
+  &__container {
+    padding-top: 53px;
+    display: grid;
+    grid-template-columns: repeat(3, 33%);
+  }
+  &__img {
+  }
+  &__title {
+    @include text-style(40px, 700, "Inika");
+    line-height: 52px;
+    color: $color-title-accent;
+  }
+  &__label {
+  }
+}

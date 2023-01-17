@@ -26,7 +26,8 @@
   }
   &__link {
     transition: .3s;
-    @include text-style(16px, 700, "Inika");
+    @include text-style(16px, 400, "Inika");
+    color: #010201;
     &:hover {
       color: $color-accent;
     }

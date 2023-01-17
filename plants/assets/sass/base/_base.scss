@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $color-section;
   @include text-style(16px, 400, "Inter");
