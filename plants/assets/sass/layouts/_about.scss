@@ -6,6 +6,10 @@
     justify-content: space-between;
     padding-top: 93px;
     padding-bottom: 94px;
+    @include respond(tab-land) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
   &__info {
     display: flex;
@@ -14,6 +18,9 @@
   }
   &__title {
     @include text-style(40px, 400, "Inika");
+    @include respond(tab-land) {
+      text-align: center;
+    }
     line-height: 52px;
     color: $color-title-accent;
     & span {

@@ -126,7 +126,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media only screen and (min-width: 993px) {
+@media only screen and (min-width: 1000px) {
   [class*=__container] {
     width: 1220px;
   }
@@ -253,6 +253,12 @@ body {
   padding-top: 93px;
   padding-bottom: 94px;
 }
+@media only screen and (max-width: 992px) {
+  .about__container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .about__info {
   display: flex;
   flex-direction: column;
@@ -264,6 +270,11 @@ body {
   font-family: "Inika";
   line-height: 52px;
   color: #499A18;
+}
+@media only screen and (max-width: 992px) {
+  .about__title {
+    text-align: center;
+  }
 }
 .about__title span {
   color: #E06733;
@@ -401,12 +412,37 @@ body {
   color: #fff;
 }
 
+.accordion {
+  display: flex;
+  flex-direction: column;
+}
 .accordion__btn {
   font-size: 20px;
   font-weight: 700;
   font-family: "Inter";
   line-height: 20px;
   color: #000;
+  padding: 17px 40px;
+  background: #EDF2EC;
+  border-radius: 20px;
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.accordion__btn:last-child {
+  margin-bottom: 0;
+}
+.accordion__btn img {
+  padding: 7px 6px 7px;
+  border-radius: 50%;
+  align-self: center;
+  background: #D9D9D9;
+}
+.accordion__btn span {
+  text-align: left;
+  width: 100px;
+  margin-right: 54px;
 }
 .accordion__text {
   font-size: 10px;
@@ -440,7 +476,7 @@ body {
 .contacts__container {
   padding-top: 53px;
   display: grid;
-  grid-template-columns: repeat(3, 33%);
+  grid-template-columns: repeat(3, 400px);
 }
 .contacts__title {
   font-size: 40px;
@@ -448,7 +484,38 @@ body {
   font-family: "Inika";
   line-height: 52px;
   color: #499A18;
+  text-align: center;
 }
+.contacts__label {
+  cursor: pointer;
+  height: 50px;
+  width: 450px;
+  background: #D6E7D2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 20px;
+  margin-top: 148px;
+}
+.contacts__label span {
+  width: 204px;
+  height: 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: #717171;
+}
+.contacts__label img {
+  padding: 6px;
+  border-radius: 50%;
+  align-self: center;
+  background: #AEA1A1;
+}
+
 .footer {
   background-color: #fff;
 }
