@@ -8,18 +8,26 @@
     padding-bottom: 94px;
     @include respond(tab-land) {
       flex-direction: column;
-      align-items: center;
+      padding-top: 40px;
+      padding-bottom: 95px;
     }
   }
   &__info {
     display: flex;
     flex-direction: column;
     margin-right: 153px;
+    @include respond(tab-land) {
+      margin: 0 auto;
+      width: 668px;
+    }
   }
   &__title {
     @include text-style(40px, 400, "Inika");
     @include respond(tab-land) {
       text-align: center;
+      width: 423px;
+      margin: 0 auto;
+      font-size: 35px;
     }
     line-height: 52px;
     color: $color-title-accent;
@@ -32,7 +40,14 @@
     line-height: 30px;
     color: $color-text;
     margin-top: 40px;
+    @include respond(tab-land) {
+      margin-bottom: 40px;
+    }
   }
-  // &__img {
-  // }
+  &__img {
+    @include respond(tab-land) {
+      width: 250px;
+      height: 258px;
+    }
+  }
 }

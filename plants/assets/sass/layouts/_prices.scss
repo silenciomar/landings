@@ -5,6 +5,10 @@
     padding-bottom: 129px;
     display: flex;
     justify-content: space-between;
+    @include respond(tab-land) {
+      padding-top: 40px;
+      padding-bottom: 88px;
+    }
   }
   &__info {
   }
@@ -15,11 +19,17 @@
     font-size: 40px;
     line-height: 50px;
     color: $color-black;
-    &--accent {
-      text-align: right;
-      & span {
-        color: $color-title-accent;
-      }
+    @include respond(tab-land) {
+      font-size: 35px;
+    }
+  }
+  &__title--accent {
+    text-align: right;
+    @include respond(tab-land) {
+      font-size: 25px;
+    }
+    & span {
+      color: $color-title-accent;
     }
   }
   &__accordion-content {
@@ -33,9 +43,12 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    @include respond(tab-land) {
+      margin-top: 139px;
+    }
   }
   &__button {
-    @include text-style(20px, 400, "Inika");
+    @include text-style(20px, 700, "Inika");
     line-height: 26px;
     color: $color-accent;
     border: 1px solid $color-accent;
@@ -43,6 +56,9 @@
     padding: 12px 40px;
     transition: .3s all;
     margin: 38px 0 39px;
+    @include respond(tab-land) {
+      margin: 22px 0 34px;
+    }
     &:hover {
       background-color: $color-accent;
       color: $color-white;
