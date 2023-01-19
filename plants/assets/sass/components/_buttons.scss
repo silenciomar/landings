@@ -1,0 +1,15 @@
+.button {
+  @include text-style(16px, 400, "Inter");
+  text-transform: uppercase;
+  line-height: 20px;
+  color: $color-black;
+  padding: 12px 25px 13px;
+  border: 2px solid $color-accent;
+  border-radius: 10px;
+  transition: .5s ease-in-out all;
+
+  &:hover {
+    background-color: $color-accent;
+    color: $color-white;
+  }
+}

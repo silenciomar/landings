@@ -1,0 +1,38 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color-section;
+  @include text-style(16px, 400, "Inter");
+}
+
+[class*='__container'] {
+  margin-left: auto;
+  margin-right: auto;
+
+  @include respond(desktop) {
+    width: 1220px;
+  };
+
+  @include respond(tab-land) {
+    width: 668px;
+  };
+
+  @include respond(phone) {
+    max-width: 330px;
+    padding: 0 15px;
+    width: unset;
+  };
+}
+
+.wrapper {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.main {
+  flex: 1 1 auto;
+}

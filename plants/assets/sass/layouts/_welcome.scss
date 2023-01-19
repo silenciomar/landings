@@ -1,0 +1,35 @@
+.welcome {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 62px;
+    padding-bottom: 94px;
+
+  }
+  &__img {
+    flex: 0 1 auto;
+  }
+  &__info {
+    flex: 0 1 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 224px;
+  }
+  &__title {
+    @include text-style(45px, 700, "Inter");
+    line-height: 50px;
+    color: $color-title;
+    & span {
+      color: $color-title-accent;
+    }
+  }
+  &__text {
+    @include text-style(20px, 400, "Inter");
+    line-height: 35px;
+    color: $color-text;
+    margin-top: 42px;
+    margin-bottom: 48px;
+  }
+}
