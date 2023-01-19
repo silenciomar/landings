@@ -126,7 +126,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 993px) {
   [class*=__container] {
     width: 1220px;
   }
@@ -213,8 +213,18 @@ body {
   padding-top: 62px;
   padding-bottom: 94px;
 }
+@media only screen and (max-width: 992px) {
+  .welcome__container {
+    flex-direction: row-reverse;
+  }
+}
 .welcome__img {
   flex: 0 1 auto;
+}
+@media only screen and (max-width: 992px) {
+  .welcome__img {
+    width: 280px;
+  }
 }
 .welcome__info {
   flex: 0 1 auto;
@@ -222,6 +232,11 @@ body {
   flex-direction: column;
   align-items: flex-start;
   margin-left: 224px;
+}
+@media only screen and (max-width: 992px) {
+  .welcome__info {
+    margin-left: 0;
+  }
 }
 .welcome__title {
   font-size: 45px;
@@ -233,6 +248,11 @@ body {
 .welcome__title span {
   color: #499A18;
 }
+@media only screen and (max-width: 992px) {
+  .welcome__title {
+    font-size: 35px;
+  }
+}
 .welcome__text {
   font-size: 20px;
   font-weight: 400;
@@ -241,6 +261,13 @@ body {
   color: #636060;
   margin-top: 42px;
   margin-bottom: 48px;
+}
+@media only screen and (max-width: 992px) {
+  .welcome__text {
+    font-size: 16px;
+    width: 341px;
+    margin: 30px 0;
+  }
 }
 
 .about {
@@ -256,13 +283,20 @@ body {
 @media only screen and (max-width: 992px) {
   .about__container {
     flex-direction: column;
-    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 95px;
   }
 }
 .about__info {
   display: flex;
   flex-direction: column;
   margin-right: 153px;
+}
+@media only screen and (max-width: 992px) {
+  .about__info {
+    margin: 0 auto;
+    width: 668px;
+  }
 }
 .about__title {
   font-size: 40px;
@@ -274,6 +308,9 @@ body {
 @media only screen and (max-width: 992px) {
   .about__title {
     text-align: center;
+    width: 423px;
+    margin: 0 auto;
+    font-size: 35px;
   }
 }
 .about__title span {
@@ -287,16 +324,39 @@ body {
   color: #636060;
   margin-top: 40px;
 }
+@media only screen and (max-width: 992px) {
+  .about__text {
+    margin-bottom: 40px;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .about__img {
+    width: 250px;
+    height: 258px;
+  }
+}
 
 .service__container {
-  padding: 40px;
+  padding-top: 40px;
   padding-bottom: 121px;
   display: flex;
   flex-direction: column;
 }
+@media only screen and (max-width: 992px) {
+  .service__container {
+    padding-top: 60px;
+    padding-bottom: 70px;
+  }
+}
 .service__tag-container {
   display: flex;
   align-items: center;
+}
+@media only screen and (max-width: 992px) {
+  .service__tag-container {
+    align-items: flex-start;
+    flex-direction: column;
+  }
 }
 .service__title {
   width: 306px;
@@ -306,6 +366,12 @@ body {
   line-height: 52px;
   color: #499A18;
   margin-right: 140px;
+}
+@media only screen and (max-width: 992px) {
+  .service__title {
+    margin-bottom: 40px;
+    font-size: 35px;
+  }
 }
 .service__tags button {
   font-size: 20px;
@@ -327,12 +393,25 @@ body {
   margin-top: 90px;
   display: grid;
   grid-template-columns: repeat(3, 330px);
+  grid-template-rows: 2;
   justify-content: space-between;
   gap: 55px 116px;
+}
+@media only screen and (max-width: 992px) {
+  .service__cards {
+    margin-top: 40px;
+    grid-template-columns: repeat(2, 281px);
+    gap: 38px 106px;
+  }
 }
 
 .card__img {
   border-radius: 20px 20px 0px 0px;
+}
+@media only screen and (max-width: 992px) {
+  .card__img {
+    width: 280px;
+  }
 }
 .card__info {
   padding-top: 10px;
@@ -341,6 +420,13 @@ body {
   border-left: 1px solid #E3E1D5;
   border-right: 1px solid #E3E1D5;
   border-radius: 0px 0px 20px 20px;
+}
+@media only screen and (max-width: 992px) {
+  .card__info {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    width: 280px;
+  }
 }
 .card__title {
   font-size: 20px;
@@ -359,6 +445,12 @@ body {
   text-align: center;
   color: #717171;
 }
+@media only screen and (max-width: 992px) {
+  .card__text {
+    width: 201px;
+    margin: 0 auto;
+  }
+}
 
 .prices {
   background-color: #fff;
@@ -369,6 +461,12 @@ body {
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (max-width: 992px) {
+  .prices__container {
+    padding-top: 40px;
+    padding-bottom: 88px;
+  }
+}
 .prices__title {
   font-family: "Inter";
   font-style: normal;
@@ -377,8 +475,18 @@ body {
   line-height: 50px;
   color: #000;
 }
+@media only screen and (max-width: 992px) {
+  .prices__title {
+    font-size: 35px;
+  }
+}
 .prices__title--accent {
   text-align: right;
+}
+@media only screen and (max-width: 992px) {
+  .prices__title--accent {
+    font-size: 25px;
+  }
 }
 .prices__title--accent span {
   color: #499A18;
@@ -395,9 +503,14 @@ body {
   flex-direction: column;
   align-items: flex-end;
 }
+@media only screen and (max-width: 992px) {
+  .prices__promo {
+    margin-top: 139px;
+  }
+}
 .prices__button {
   font-size: 20px;
-  font-weight: 400;
+  font-weight: 700;
   font-family: "Inika";
   line-height: 26px;
   color: #E06733;
@@ -406,6 +519,11 @@ body {
   padding: 12px 40px;
   transition: 0.3s all;
   margin: 38px 0 39px;
+}
+@media only screen and (max-width: 992px) {
+  .prices__button {
+    margin: 22px 0 34px;
+  }
 }
 .prices__button:hover {
   background-color: #E06733;
@@ -478,6 +596,22 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 400px);
 }
+@media only screen and (max-width: 992px) {
+  .contacts__container {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .contacts__img {
+    order: 1;
+    width: 200px;
+    height: 248.49px;
+    margin-top: 250px;
+  }
+}
 .contacts__title {
   font-size: 40px;
   font-weight: 700;
@@ -497,6 +631,11 @@ body {
   justify-content: space-between;
   padding: 5px 20px;
   margin-top: 148px;
+}
+@media only screen and (max-width: 992px) {
+  .contacts__label {
+    margin-top: 100px;
+  }
 }
 .contacts__label span {
   width: 204px;
@@ -526,11 +665,22 @@ body {
   align-items: center;
   font-size: 20px;
 }
+@media only screen and (max-width: 992px) {
+  .footer__container {
+    flex-direction: column;
+    padding: 33px 0 18px;
+  }
+}
 .footer__info span {
   margin-right: 20px;
 }
 .footer__info a {
   cursor: pointer;
+}
+@media only screen and (max-width: 992px) {
+  .footer__subtitle {
+    margin: 16px 0;
+  }
 }
 .footer__social-nets {
   display: flex;
