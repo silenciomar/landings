@@ -21,7 +21,7 @@ body {
 
   @include respond(phone) {
     max-width: 330px;
-    padding: 0 15px;
+    // padding: 0 15px;
     width: unset;
   };
 }

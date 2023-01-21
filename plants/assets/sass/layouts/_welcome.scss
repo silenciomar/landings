@@ -61,6 +61,7 @@
     }
     @include respond(phone) {
       margin: 20px 0;
+      width: auto;
     }
   }
 }

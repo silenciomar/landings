@@ -139,7 +139,6 @@ body {
 @media only screen and (max-width: 767px) {
   [class*=__container] {
     max-width: 330px;
-    padding: 0 15px;
     width: unset;
   }
 }
@@ -176,6 +175,91 @@ body {
 .button:hover {
   background-color: #E06733;
   color: #fff;
+}
+
+.burger-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 35px;
+  background: #EDF2EC;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+}
+.burger-menu.active {
+  display: flex;
+  flex-direction: column;
+  transform: translateX(0);
+  z-index: 1;
+}
+.burger-menu__item {
+  margin-bottom: 15px;
+}
+.burger-menu__item:last-child {
+  margin-bottom: 0;
+}
+.burger-menu__link {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: "Inika";
+  color: #010201;
+}
+.burger-menu__link:hover {
+  color: #E06733;
+}
+
+.burger-btn {
+  display: none;
+  width: 40px;
+  height: 24px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  cursor: pointer;
+}
+.burger-btn.active {
+  z-index: 2;
+}
+@media only screen and (max-width: 767px) {
+  .burger-btn {
+    display: block;
+  }
+}
+.burger-btn span {
+  width: 40px;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #717171;
+  transition: all 0.5s;
+}
+.burger-btn span:nth-of-type(2) {
+  top: calc(50% - 4px);
+}
+.burger-btn span:nth-of-type(3) {
+  top: calc(50% + 4px);
+}
+.burger-btn span:nth-of-type(4) {
+  top: calc(50% + 8px);
+}
+.burger-btn.active span:nth-of-type(1) {
+  display: none;
+}
+.burger-btn.active span:nth-of-type(2) {
+  top: 45%;
+  transform: translate(-45%, 0%) rotate(45deg);
+}
+.burger-btn.active span:nth-of-type(3) {
+  top: 45%;
+  transform: translate(-45%, 0%) rotate(-45deg);
+}
+.burger-btn.active span:nth-of-type(4) {
+  display: none;
 }
 
 .header__container {
@@ -303,6 +387,7 @@ body {
 @media only screen and (max-width: 767px) {
   .welcome__text {
     margin: 20px 0;
+    width: auto;
   }
 }
 
@@ -491,7 +576,7 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .service__cards {
-    margin-top: 40px;
+    margin: 40px auto 0;
     grid-template-columns: repeat(2, 281px);
     gap: 38px 106px;
   }

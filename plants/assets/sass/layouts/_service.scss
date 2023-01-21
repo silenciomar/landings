@@ -75,7 +75,7 @@
     justify-content: space-between;
     gap: 55px 116px;
     @include respond(tab-land) {
-      margin-top: 40px;
+      margin: 40px auto 0;
       grid-template-columns: repeat(2, 281px);
       gap: 38px 106px;
     }
