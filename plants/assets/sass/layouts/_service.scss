@@ -8,6 +8,10 @@
       padding-top: 60px;
       padding-bottom: 70px;
     }
+    @include respond(phone) {
+      padding-top: 30px;
+      padding-bottom: 27px;
+    }
   }
   &__tag-container {
     display: flex;
@@ -27,6 +31,12 @@
       margin-bottom: 40px;
       font-size: 35px;
     }
+    @include respond(phone) {
+      font-size: 25px;
+      width: 187px;
+      margin-bottom: 35px;
+      line-height: 33px;
+    }
   }
   &__tags {
     & button {
@@ -38,9 +48,22 @@
       padding: 12px 40px;
       transition: .3s all;
       margin-right: 38px;
+      &:nth-child(3) {
+        margin-right: 0;
+        @include respond(phone) {
+          margin-top: 9px;
+        }
+      }
       &:hover {
         background-color: $color-accent;
         color: $color-white;
+      }
+      @include respond(phone) {
+        padding: 8px 28px;
+        font-size: 15px;
+        line-height: 20px;
+        margin-right: 10px;
+        width: 121px;
       }
     }
   } 
@@ -55,6 +78,11 @@
       margin-top: 40px;
       grid-template-columns: repeat(2, 281px);
       gap: 38px 106px;
+    }
+    @include respond(phone) {
+      display: flex;
+      flex-direction: column;
+      gap: 34px;
     }
   }
 }

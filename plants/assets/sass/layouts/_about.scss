@@ -11,6 +11,10 @@
       padding-top: 40px;
       padding-bottom: 95px;
     }
+    @include respond(phone) {
+      padding-top: 30px;
+      padding-bottom: 31px;
+    }
   }
   &__info {
     display: flex;
@@ -20,19 +24,26 @@
       margin: 0 auto;
       width: 668px;
     }
+    @include respond(phone) {
+      width: 330px;
+    }
   }
   &__title {
     @include text-style(40px, 400, "Inika");
+    line-height: 52px;
+    color: $color-title-accent;
+    & span {
+      color: $color-accent;
+    }
     @include respond(tab-land) {
       text-align: center;
       width: 423px;
       margin: 0 auto;
       font-size: 35px;
     }
-    line-height: 52px;
-    color: $color-title-accent;
-    & span {
-      color: $color-accent;
+    @include respond(phone) {
+      font-size: 25px;
+      width: auto;
     }
   }
   &__text {
@@ -42,6 +53,12 @@
     margin-top: 40px;
     @include respond(tab-land) {
       margin-bottom: 40px;
+    }
+    @include respond(phone) {
+      font-size: 15px;
+      line-height: 25px;
+      margin-top: 21px;
+      margin-bottom: 0px;
     }
   }
   &__img {

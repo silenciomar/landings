@@ -9,9 +9,14 @@
       padding-top: 40px;
       padding-bottom: 88px;
     }
+    @include respond(phone) {
+      flex-direction: column;
+      padding-top: 25px;
+      padding-bottom: 40px;
+    }
   }
-  &__info {
-  }
+  // &__info {
+  // }
   &__title {
     font-family: 'Inter';
     font-style: normal;
@@ -22,14 +27,24 @@
     @include respond(tab-land) {
       font-size: 35px;
     }
+    @include respond(phone) {
+      font-size: 25px;
+      line-height: 30px;
+      text-align: center;
+    }
   }
   &__title--accent {
     text-align: right;
+    & span {
+      color: $color-title-accent;
+    }
     @include respond(tab-land) {
       font-size: 25px;
     }
-    & span {
-      color: $color-title-accent;
+    @include respond(phone) {
+      font-size: 20px;
+      line-height: 35px;
+      text-align: center;
     }
   }
   &__accordion-content {
@@ -37,6 +52,10 @@
     border-radius: 20px;
     padding: 34px 41px;
     margin-top: 94px;
+    @include respond(phone) {
+      padding: 29px 22px;
+      margin-top: 40px;
+    }
   }
   &__promo {
     width: 452px;
@@ -45,6 +64,11 @@
     align-items: flex-end;
     @include respond(tab-land) {
       margin-top: 139px;
+    }
+    @include respond(phone) {
+      margin-top: 19px;
+      width: 230px;
+      margin: 19px auto 0;
     }
   }
   &__button {
@@ -59,13 +83,22 @@
     @include respond(tab-land) {
       margin: 22px 0 34px;
     }
+    @include respond(phone) {
+      padding: 8px 22px;
+      font-size: 15px;
+      width: 121px;
+      margin: 14px auto 0;
+    }
     &:hover {
       background-color: $color-accent;
       color: $color-white;
     }
   }
-  // &__img {
-  // }
+  &__img {
+    @include respond(phone) {
+      display: none;
+    }
+  }
 }
 .accordion {
   display: flex;
@@ -81,6 +114,10 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
+      @include respond(phone) {
+        font-size: 15px;
+        padding: 16px 40px 16px 30px;
+      }
       &:last-child {
         margin-bottom: 0;
       }
@@ -90,11 +127,15 @@
         align-self: center;
         background: #D9D9D9;
       }
-      & span {
-        text-align: left;
-        width: 100px;
-        margin-right: 54px;
-      }
+    }
+    &__subtitle {
+    text-align: left;
+    width: 100px;
+    margin-right: 54px;
+    @include respond(phone) {
+      width: 89px;
+      margin-right: 5px;
+    }
   }
   // &__panel {
   // }
@@ -114,7 +155,7 @@
   &__order {
     width: 86px;
     height: 25px;
-@include text-style(14px, 700, "Inter");
+    @include text-style(14px, 700, "Inter");
     line-height: 20px;
     color: $color-title;
     background: $color-white;
