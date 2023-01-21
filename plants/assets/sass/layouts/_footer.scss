@@ -10,6 +10,9 @@
       flex-direction: column;
       padding: 33px 0 18px;
     }
+    @include respond(phone) {
+      padding: 22px 0 16px;
+    }
   }
   &__info {
     & span {

@@ -9,6 +9,9 @@
       flex-direction: column;
       align-items: center;
     }
+    @include respond(phone) {
+      padding-top: 25px;
+    }
   }
   &__img {
     @include respond(tab-land) {
@@ -17,12 +20,19 @@
       height: 248.49px;
       margin-top: 250px;
     }
+    @include respond(phone) {
+      margin-top: 132px;
+    }
   }
   &__title {
     @include text-style(40px, 700, "Inika");
     line-height: 52px;
     color: $color-title-accent;
     text-align: center;
+    @include respond(phone) {
+      font-size: 25px;
+      line-height: 33px;
+    }
   }
   &__label {
     cursor: pointer;
@@ -37,6 +47,10 @@
     margin-top: 148px;
     @include respond(tab-land) {
       margin-top: 100px;
+    }
+    @include respond(phone) {
+      width: 300px;
+      margin-top: 80px;
     }
     & span {
       width: 204px;

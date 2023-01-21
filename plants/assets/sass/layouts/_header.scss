@@ -31,5 +31,9 @@
     &:hover {
       color: $color-accent;
     }
-  } 
+  }
+
+  @include respond(phone) {
+    display: none;
+  }
 }
