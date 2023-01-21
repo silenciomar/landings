@@ -1,0 +1,83 @@
+.burger-menu {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  padding: 35px;
+  background: $color-section;
+  transform: translateX(-100%);
+  transition: transform 0.5s;
+
+  &.active {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(0);
+    z-index: 1;
+  }
+  &__item {
+    margin-bottom: 15px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+  &__link {
+    @include text-style(16px, 400, "Inika");
+    color: #010201;
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+.burger-btn {
+  display: none;
+  width: 40px;
+  height: 24px;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+  cursor: pointer;
+  &.active {
+    z-index: 2;
+  }
+  @include respond(phone) {
+    display: block;
+  }
+
+  & span {
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #717171;
+    transition: all 0.5s;
+    }
+
+    & span:nth-of-type(2) {
+      top: calc(50% - 4px);
+    }
+    & span:nth-of-type(3) {
+      top: calc(50% + 4px);
+    }
+    & span:nth-of-type(4) {
+      top: calc(50% + 8px);
+    }
+
+    &.active span:nth-of-type(1) {
+      display: none;
+    }
+    &.active span:nth-of-type(2) {
+      top: 45%;
+      transform: translate(-45%, 0%) rotate(45deg);
+    }
+    &.active span:nth-of-type(3) {
+      top: 45%;
+      transform: translate(-45%, 0%) rotate(-45deg);
+    }
+    &.active span:nth-of-type(4) {
+      display: none;
+    }
+}
