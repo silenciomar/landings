@@ -39,6 +39,7 @@
       text-align: center;
       width: 423px;
       margin: 0 auto;
+      line-height: 46px;
       font-size: 35px;
     }
     @include respond(phone) {
@@ -53,7 +54,7 @@
     color: $color-text;
     margin-top: 40px;
     @include respond(tab-land) {
-      margin-bottom: 40px;
+      margin: 50px 0 68px;
     }
     @include respond(phone) {
       font-size: 15px;
