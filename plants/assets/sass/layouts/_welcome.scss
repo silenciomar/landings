@@ -46,6 +46,7 @@
     }
     @include respond(phone) {
       font-size: 25px;
+      line-height: 35px;
     }
   }
   &__text {
@@ -62,6 +63,7 @@
     @include respond(phone) {
       margin: 20px 0;
       width: auto;
+      line-height: 25px;
     }
   }
 }

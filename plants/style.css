@@ -169,7 +169,7 @@ body {
 @media only screen and (max-width: 767px) {
   .button {
     font-size: 10px;
-    padding: 8px 18px;
+    padding: 8px 16px;
   }
 }
 .button:hover {
@@ -178,21 +178,19 @@ body {
 }
 
 .burger-menu {
-  display: none;
-  position: fixed;
   top: 0;
-  right: 0;
+  right: -100%;
   width: 100%;
   height: 100%;
   padding: 35px;
   background: #EDF2EC;
-  transform: translateX(-100%);
-  transition: transform 0.5s;
-}
-.burger-menu.active {
+  transition: 1s right;
+  position: fixed;
   display: flex;
   flex-direction: column;
-  transform: translateX(0);
+}
+.burger-menu.active {
+  right: 0 !important;
   z-index: 1;
 }
 .burger-menu__item {
@@ -205,6 +203,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   font-family: "Inika";
+  text-transform: uppercase;
   color: #010201;
 }
 .burger-menu__link:hover {
@@ -239,13 +238,13 @@ body {
   transition: all 0.5s;
 }
 .burger-btn span:nth-of-type(2) {
-  top: calc(50% - 4px);
+  top: calc(50% - 5px);
 }
 .burger-btn span:nth-of-type(3) {
-  top: calc(50% + 4px);
+  top: calc(50% + 5px);
 }
 .burger-btn span:nth-of-type(4) {
-  top: calc(50% + 8px);
+  top: calc(50% + 10px);
 }
 .burger-btn.active span:nth-of-type(1) {
   display: none;
@@ -267,6 +266,11 @@ body {
   justify-content: space-between;
   align-items: flex-end;
   padding: 42px 0;
+}
+@media only screen and (max-width: 767px) {
+  .header__container {
+    padding: 36px 0;
+  }
 }
 .header__logo {
   font-size: 16px;
@@ -366,6 +370,7 @@ body {
 @media only screen and (max-width: 767px) {
   .welcome__title {
     font-size: 25px;
+    line-height: 35px;
   }
 }
 .welcome__text {
@@ -388,6 +393,7 @@ body {
   .welcome__text {
     margin: 20px 0;
     width: auto;
+    line-height: 25px;
   }
 }
 
@@ -452,6 +458,7 @@ body {
   .about__title {
     font-size: 25px;
     width: auto;
+    line-height: 33px;
   }
 }
 .about__text {
@@ -471,7 +478,7 @@ body {
   .about__text {
     font-size: 15px;
     line-height: 25px;
-    margin-top: 21px;
+    margin-top: 17px;
     margin-bottom: 0px;
   }
 }
@@ -479,6 +486,12 @@ body {
   .about__img {
     width: 250px;
     height: 258px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .about__img {
+    width: 150px;
+    height: 147px;
   }
 }
 
@@ -529,7 +542,7 @@ body {
   .service__title {
     font-size: 25px;
     width: 187px;
-    margin-bottom: 35px;
+    margin-bottom: 37px;
     line-height: 33px;
   }
 }
@@ -559,10 +572,10 @@ body {
 }
 @media only screen and (max-width: 767px) {
   .service__tags button {
-    padding: 8px 28px;
+    padding: 8px 30px;
     font-size: 15px;
     line-height: 20px;
-    margin-right: 10px;
+    margin-right: 5px;
     width: 121px;
   }
 }
@@ -595,6 +608,21 @@ body {
 @media only screen and (max-width: 992px) {
   .card__img {
     width: 280px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .card__img {
+    overflow: hidden;
+    width: 280px;
+    height: 349px;
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .card__img img {
+    width: 280px;
+    height: 349px;
+    margin: 0 auto;
   }
 }
 .card__info {
@@ -705,7 +733,8 @@ body {
 @media only screen and (max-width: 767px) {
   .prices__accordion-content {
     padding: 29px 22px;
-    margin-top: 40px;
+    margin: 36px auto 0;
+    width: 224px;
   }
 }
 .prices__promo {
@@ -723,7 +752,7 @@ body {
   .prices__promo {
     margin-top: 19px;
     width: 230px;
-    margin: 19px auto 0;
+    margin: 12px auto 0;
   }
 }
 .prices__button {
@@ -783,6 +812,8 @@ body {
   .accordion__btn {
     font-size: 15px;
     padding: 16px 40px 16px 30px;
+    width: 180px;
+    margin: 0 auto 14px;
   }
 }
 .accordion__btn:last-child {
@@ -863,6 +894,8 @@ body {
 @media only screen and (max-width: 767px) {
   .contacts__img {
     margin-top: 132px;
+    width: 100px;
+    height: 124.25px;
   }
 }
 .contacts__title {

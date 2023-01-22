@@ -4,6 +4,9 @@
     justify-content: space-between;
     align-items: flex-end;
     padding: 42px 0;
+    @include respond(phone) {
+      padding: 36px 0;
+    }
   }
   &__logo {
     @include text-style(16px, 400, "Inika");

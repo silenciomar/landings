@@ -9,7 +9,7 @@
   transition: .5s ease-in-out all;
   @include respond(phone) {
     font-size: 10px;
-    padding: 8px 18px;
+    padding: 8px 16px;
   }
 
   &:hover {
