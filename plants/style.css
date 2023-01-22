@@ -267,6 +267,11 @@ body {
   align-items: flex-end;
   padding: 42px 0;
 }
+@media only screen and (max-width: 992px) {
+  .header__container {
+    padding: 46px 0;
+  }
+}
 @media only screen and (max-width: 767px) {
   .header__container {
     padding: 36px 0;
@@ -285,6 +290,11 @@ body {
 }
 .nav__item {
   margin-right: 46px;
+}
+@media only screen and (max-width: 992px) {
+  .nav__item {
+    margin-right: 47px;
+  }
 }
 .nav__item:last-child {
   margin-right: 0;
@@ -305,6 +315,10 @@ body {
   }
 }
 
+.nav__link--accent {
+  color: #E06733 !important;
+}
+
 .welcome__container {
   display: flex;
   justify-content: space-between;
@@ -315,6 +329,7 @@ body {
 @media only screen and (max-width: 992px) {
   .welcome__container {
     flex-direction: row-reverse;
+    padding: 0 0 70px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -344,12 +359,14 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .welcome__info {
-    margin-left: 0;
+    margin: 0;
+    padding-top: 40px;
   }
 }
 @media only screen and (max-width: 767px) {
   .welcome__info {
     margin: 0;
+    padding-top: 0;
   }
 }
 .welcome__title {
@@ -386,7 +403,8 @@ body {
   .welcome__text {
     font-size: 16px;
     width: 341px;
-    margin: 30px 0;
+    margin: 34px 0 30px 4px;
+    line-height: 25px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -451,6 +469,7 @@ body {
     text-align: center;
     width: 423px;
     margin: 0 auto;
+    line-height: 46px;
     font-size: 35px;
   }
 }
@@ -471,7 +490,7 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .about__text {
-    margin-bottom: 40px;
+    margin: 50px 0 68px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -536,6 +555,7 @@ body {
   .service__title {
     margin-bottom: 40px;
     font-size: 35px;
+    line-height: 46px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -569,6 +589,12 @@ body {
 .service__tags button:hover {
   background-color: #E06733;
   color: #fff;
+}
+@media only screen and (max-width: 992px) {
+  .service__tags button {
+    width: 161px;
+    margin-right: 32px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .service__tags button {
@@ -608,6 +634,7 @@ body {
 @media only screen and (max-width: 992px) {
   .card__img {
     width: 280px;
+    height: 350px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -676,7 +703,7 @@ body {
 @media only screen and (max-width: 992px) {
   .prices__container {
     padding-top: 40px;
-    padding-bottom: 88px;
+    padding-bottom: 78px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -697,6 +724,7 @@ body {
 @media only screen and (max-width: 992px) {
   .prices__title {
     font-size: 35px;
+    line-height: 42px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -715,6 +743,7 @@ body {
 @media only screen and (max-width: 992px) {
   .prices__title--accent {
     font-size: 25px;
+    line-height: 35px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -729,6 +758,11 @@ body {
   border-radius: 20px;
   padding: 34px 41px;
   margin-top: 94px;
+}
+@media only screen and (max-width: 992px) {
+  .prices__accordion-content {
+    margin-top: 54px;
+  }
 }
 @media only screen and (max-width: 767px) {
   .prices__accordion-content {
@@ -745,7 +779,7 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .prices__promo {
-    margin-top: 139px;
+    margin-top: 100px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -769,7 +803,8 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .prices__button {
-    margin: 22px 0 34px;
+    margin: 25px 0 32px;
+    padding: 12px 32px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -889,6 +924,7 @@ body {
     width: 200px;
     height: 248.49px;
     margin-top: 250px;
+    margin-left: 19px;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -896,6 +932,7 @@ body {
     margin-top: 132px;
     width: 100px;
     height: 124.25px;
+    margin-left: 0;
   }
 }
 .contacts__title {
@@ -952,6 +989,16 @@ body {
   align-self: center;
   background: #AEA1A1;
 }
+@media only screen and (max-width: 992px) {
+  .contacts__label img {
+    margin-right: 14px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contacts__label img {
+    margin-right: 0;
+  }
+}
 
 .footer {
   background-color: #fff;
@@ -982,7 +1029,12 @@ body {
 }
 @media only screen and (max-width: 992px) {
   .footer__subtitle {
-    margin: 16px 0;
+    margin: 24px 0;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer__subtitle {
+    margin: 18px 0;
   }
 }
 .footer__social-nets {

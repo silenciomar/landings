@@ -19,11 +19,13 @@
       width: 200px;
       height: 248.49px;
       margin-top: 250px;
+      margin-left: 19px;
     }
     @include respond(phone) {
       margin-top: 132px;
       width: 100px;
       height: 124.25px;
+      margin-left: 0;
     }
   }
   &__title {
@@ -70,6 +72,12 @@
       border-radius: 50%;
       align-self: center;
       background: #AEA1A1;
+      @include respond(tab-land) {
+        margin-right: 14px;
+      }
+      @include respond(phone) {
+        margin-right: 0;
+      }
     }
   }
 }

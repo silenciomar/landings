@@ -7,7 +7,7 @@
     justify-content: space-between;
     @include respond(tab-land) {
       padding-top: 40px;
-      padding-bottom: 88px;
+      padding-bottom: 78px;
     }
     @include respond(phone) {
       flex-direction: column;
@@ -26,6 +26,7 @@
     color: $color-black;
     @include respond(tab-land) {
       font-size: 35px;
+      line-height: 42px;
     }
     @include respond(phone) {
       font-size: 25px;
@@ -40,6 +41,7 @@
     }
     @include respond(tab-land) {
       font-size: 25px;
+      line-height: 35px;
     }
     @include respond(phone) {
       font-size: 20px;
@@ -52,6 +54,9 @@
     border-radius: 20px;
     padding: 34px 41px;
     margin-top: 94px;
+    @include respond(tab-land) {
+      margin-top: 54px;
+    }
     @include respond(phone) {
       padding: 29px 22px;
       margin: 36px auto 0;
@@ -64,7 +69,7 @@
     flex-direction: column;
     align-items: flex-end;
     @include respond(tab-land) {
-      margin-top: 139px;
+      margin-top: 100px;
     }
     @include respond(phone) {
       margin-top: 19px;
@@ -82,7 +87,8 @@
     transition: .3s all;
     margin: 38px 0 39px;
     @include respond(tab-land) {
-      margin: 22px 0 34px;
+      margin: 25px 0 32px;
+      padding: 12px 32px;
     }
     @include respond(phone) {
       padding: 8px 22px;

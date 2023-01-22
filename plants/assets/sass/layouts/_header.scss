@@ -4,6 +4,9 @@
     justify-content: space-between;
     align-items: flex-end;
     padding: 42px 0;
+    @include respond(tab-land) {
+      padding: 46px 0;
+    }
     @include respond(phone) {
       padding: 36px 0;
     }
@@ -23,6 +26,9 @@
   }
   &__item {
     margin-right: 46px;
+    @include respond(tab-land) {
+      margin-right: 47px;
+    }
     &:last-child {
       margin-right: 0;
     }
@@ -35,8 +41,11 @@
       color: $color-accent;
     }
   }
-
+  
   @include respond(phone) {
     display: none;
   }
+}
+.nav__link--accent {
+  color: $color-accent !important;
 }
