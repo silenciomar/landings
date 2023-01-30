@@ -71,7 +71,13 @@
         width: 121px;
       }
     }
-  } 
+  }
+  &__btn {
+    &.active {
+      background-color: $color-accent;
+      color: $color-white;
+    }
+  }
   &__cards {
     margin-top: 90px;
     display: grid;
@@ -104,13 +110,6 @@
       height: 349px;
       margin: 0;
     }
-    & img {
-      @include respond(phone) {
-        width: 280px;
-        height: 349px;
-        margin: 0 auto;
-      }
-    }
   }
 
   &__info {
@@ -142,5 +141,8 @@
       width: 201px;
       margin: 0 auto;
     }
+  }
+  &__blur {
+    filter: blur(2px);
   }
 }
