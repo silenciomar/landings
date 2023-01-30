@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="./assets/logo.ico" type="image/x-icon">
   <script src="./burger.js" defer></script>
+  <script src="./selectTags.js" defer></script>
 </head>
 <body>
   <div class="wrapper">
@@ -74,51 +75,69 @@
           <div class="service__tag-container">
             <h2 class="service__title">Service and our projects</h2>
             <div class="service__tags">
-              <button>Gardens</button>
-              <button>Lawn</button>
-              <button>Planting</button>
+              <button class="service__btn garden">Gardens</button>
+              <button class="service__btn lawn">Lawn</button>
+              <button class="service__btn planting">Planting</button>
             </div>
           </div>
           <div class="service__cards">
-            <div class="card">
-              <img class="card__img" src="./assets/img/care_1.jpg" alt="care">
+            <div class="card card__blur" id="garden">
+              <picture>
+                <source media="(max-width: 992px)" srcset="./assets/img/care_1_mobile.jpg">
+                <img class="card__img" src="./assets/img/care_1.jpg" alt="care">
+              </picture>
               <div class="card__info">
                 <p class="card__title">Garden care</p>
                 <p class="card__text">Lorem Ipsum has been the industry</p>
               </div>
             </div>
-            <div class="card">
-              <img class="card__img" src="./assets/img/planting_1.jpg" alt="planting">
+            <div class="card card__blur" id="planting">
+              <picture>
+                <source media="(max-width: 992px)" srcset="./assets/img/planting_1_mobile.jpg">
+                <img class="card__img" src="./assets/img/planting_1.jpg" alt="planting">
+              </picture>
               <div class="card__info">
                 <p class="card__title">Planting</p>
                 <p class="card__text">Lorem Ipsum has been the industry</p>
               </div>
             </div>
-            <div class="card">
-              <img class="card__img" src="./assets/img/lawn.jpg" alt="lawn">
+            <div class="card card__blur" id="lawn">
+              <picture>
+                <source media="(max-width: 992px)" srcset="./assets/img/lawn_mobile.jpg">
+                <img class="card__img" src="./assets/img/lawn.jpg" alt="lawn">
+              </picture>
               <div class="card__info">
                 <p class="card__title">Lawn care</p>
                 <p class="card__text">Lorem Ipsum has been the industry</p>
               </div>
             </div>
-            <div class="card">
-              <img class="card__img" src="./assets/img/planting_2.jpg" alt="planting">
+            <div class="card card__blur" id="planting">
+              <picture>
+                <source media="(max-width: 992px)" srcset="./assets/img/planting_2_mobile.jpg">
+                <img class="card__img" src="./assets/img/planting_2.jpg" alt="planting">
+              </picture>
               <div class="card__info">
                 <p class="card__title">Planting</p>
                 <p class="card__text">Lorem Ipsum has been the industry</p>
               </div>
             </div>
-            <div class="card">
-              <img class="card__img" src="./assets/img/care_2.jpg" alt="care">
+            <div class="card card__blur" id="garden">
+              <picture>
+                <source media="(max-width: 992px)" srcset="./assets/img/care_2_mobile.jpg">
+                <img class="card__img" src="./assets/img/care_2.jpg" alt="care">
+              </picture>
               <div class="card__info">
                 <p class="card__title">Garden care</p>
                 <p class="card__text">Lorem Ipsum has been the industry</p>
               </div>
             </div>
-            <div class="card">
-              <img class="card__img" src="./assets/img/planting_3.jpg" alt="planting">
+            <div class="card card__blur" id="planting">
+              <picture>
+                <source media="(max-width: 992px)" srcset="./assets/img/planting_3_mobile.jpg">
+                <img class="card__img" src="./assets/img/planting_3.jpg" alt="planting">
+              </picture>
               <div class="card__info">
-                <p class="card__title">Planting</p>
+                <p class="card__title ">Planting</p>
                 <p class="card__text">Lorem Ipsum has been the industry</p>
               </div>
             </div>

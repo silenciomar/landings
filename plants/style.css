@@ -605,6 +605,10 @@ body {
     width: 121px;
   }
 }
+.service__btn.active {
+  background-color: #E06733;
+  color: #fff;
+}
 .service__cards {
   margin-top: 90px;
   display: grid;
@@ -645,13 +649,6 @@ body {
     margin: 0;
   }
 }
-@media only screen and (max-width: 767px) {
-  .card__img img {
-    width: 280px;
-    height: 349px;
-    margin: 0 auto;
-  }
-}
 .card__info {
   padding-top: 10px;
   padding-bottom: 36px;
@@ -689,6 +686,9 @@ body {
     width: 201px;
     margin: 0 auto;
   }
+}
+.card__blur {
+  filter: blur(2px);
 }
 
 .prices {
