@@ -1,4 +1,4 @@
-let button = document.querySelectorAll('.service__btn');
+/* let button = document.querySelectorAll('.service__btn');
 let garden = document.querySelectorAll('#garden');
 let lawn = document.querySelector('#lawn');
 let planting = document.querySelectorAll('#planting');
@@ -26,4 +26,4 @@ button.forEach(btn => {
       
     }
   })
-})
+}) */
