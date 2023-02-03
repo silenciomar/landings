@@ -9,6 +9,8 @@
   <link rel="shortcut icon" href="./assets/logo.ico" type="image/x-icon">
   <script src="./burger.js" defer></script>
   <script src="./selectTags.js" defer></script>
+  <script src="./accordion.js" defer></script>
+  <script src="./dropdown.js" defer></script>
 </head>
 <body>
   <div class="wrapper">
@@ -75,13 +77,13 @@
           <div class="service__tag-container">
             <h2 class="service__title">Service and our projects</h2>
             <div class="service__tags">
-              <button class="service__btn garden">Gardens</button>
-              <button class="service__btn lawn">Lawn</button>
-              <button class="service__btn planting">Planting</button>
+              <button class="service__btn service__btn--selected" id="garden">Gardens</button>
+              <button class="service__btn service__btn--bordered" id="lawn">Lawn</button>
+              <button class="service__btn service__btn--bordered" id="planting">Planting</button>
             </div>
           </div>
           <div class="service__cards">
-            <div class="card card__blur" id="garden">
+            <div class="card gardens">
               <picture>
                 <source media="(max-width: 992px)" srcset="./assets/img/care_1_mobile.jpg">
                 <img class="card__img" src="./assets/img/care_1.jpg" alt="care">
@@ -91,7 +93,7 @@
                 <p class="card__text">Lorem Ipsum has been the industry</p>
               </div>
             </div>
-            <div class="card card__blur" id="planting">
+            <div class="card planting">
               <picture>
                 <source media="(max-width: 992px)" srcset="./assets/img/planting_1_mobile.jpg">
                 <img class="card__img" src="./assets/img/planting_1.jpg" alt="planting">
@@ -101,7 +103,7 @@
                 <p class="card__text">Lorem Ipsum has been the industry</p>
               </div>
             </div>
-            <div class="card card__blur" id="lawn">
+            <div class="card lawn">
               <picture>
                 <source media="(max-width: 992px)" srcset="./assets/img/lawn_mobile.jpg">
                 <img class="card__img" src="./assets/img/lawn.jpg" alt="lawn">
@@ -111,7 +113,7 @@
                 <p class="card__text">Lorem Ipsum has been the industry</p>
               </div>
             </div>
-            <div class="card card__blur" id="planting">
+            <div class="card planting">
               <picture>
                 <source media="(max-width: 992px)" srcset="./assets/img/planting_2_mobile.jpg">
                 <img class="card__img" src="./assets/img/planting_2.jpg" alt="planting">
@@ -121,7 +123,7 @@
                 <p class="card__text">Lorem Ipsum has been the industry</p>
               </div>
             </div>
-            <div class="card card__blur" id="garden">
+            <div class="card gardens">
               <picture>
                 <source media="(max-width: 992px)" srcset="./assets/img/care_2_mobile.jpg">
                 <img class="card__img" src="./assets/img/care_2.jpg" alt="care">
@@ -131,7 +133,7 @@
                 <p class="card__text">Lorem Ipsum has been the industry</p>
               </div>
             </div>
-            <div class="card card__blur" id="planting">
+            <div class="card planting">
               <picture>
                 <source media="(max-width: 992px)" srcset="./assets/img/planting_3_mobile.jpg">
                 <img class="card__img" src="./assets/img/planting_3.jpg" alt="planting">
@@ -149,33 +151,37 @@
           <div class="prices__info">
             <h2 class="prices__title">Prices</h2>
             <div class="prices__accordion-content accordion">
-              <button class="accordion__btn"> <span class="accordion__subtitle">Basics</span>  <img src="./assets/icons/arrow.svg" alt="arrow-icon"></button>
-<!--                 <div class="accordion__panel">
-                  <p class="accrodion__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
-                  <p class="accordion__price"> <span>$15</span>/ per hour</p>
-                  <button class="accordion__order">Order</button>
-                </div> -->
-
-                <button class="accordion__btn"> <span class="accordion__subtitle">Standard</span>  <img src="./assets/icons/arrow.svg" alt="arrow-icon"></button>
-<!--                 <div class="accordion__panel">
-                  <p class="accrodion__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+              <div class="accordion__item">
+                <button class="accordion__btn"> <span class="accordion__subtitle">Basics</span>  <span class="accordion__img"></span></button>
+                  <div class="accordion__panel">
+                    <p class="accordion__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                    <p class="accordion__price"> <span>$15</span>/ per hour</p>
+                    <a class="accordion__order" href="#contacts">Order</a>
+                  </div>
+              </div>
+              <div class="accordion__item">
+                <button class="accordion__btn"> <span class="accordion__subtitle">Standard</span>  <span class="accordion__img"></span></button>
+                <div class="accordion__panel">
+                  <p class="accordion__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
                   <p class="accordion__price"> <span>$25</span>/ per hour</p>
-                  <button class="accordion__order">Order</button>
-                </div> -->
-
-                <button class="accordion__btn"> <span class="accordion__subtitle">Pro care</span>  <img src="./assets/icons/arrow.svg" alt="arrow-icon"></button>
-<!--                 <div class="accordion__panel">
-                  <p class="accrodion__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
+                  <a class="accordion__order" href="#contacts">Order</a>
+                </div>
+              </div>
+              <div class="accordion__item">
+                <button class="accordion__btn"> <span class="accordion__subtitle">Pro care</span>  <span class="accordion__img"></span></button>
+                <div class="accordion__panel">
+                  <p class="accordion__text">Release of Letraset sheets containing Lorem Ipsum passages, and more recently</p>
                   <p class="accordion__price"> <span>$35</span>/ per hour</p>
-                  <button class="accordion__order">Order</button>
-                </div> -->
+                  <a class="accordion__order" href="#contacts">Order</a>
+                </div>
+              </div>
             </div>
           </div>
           <div class="prices__promo">
             <h2 class="prices__title prices__title--accent">Our best <span>gardeners</span> are ready to help you</h2>
-            <button class="prices__button">
+            <a class="prices__button" href="#contacts">
               Contact us
-            </button>
+            </a>
             <img class="prices__img" src="./assets/img/leafs_2.png" alt="leafs_2">
           </div>
         </div>
@@ -184,7 +190,86 @@
         <div class="contacts__container">
           <img class="contacts__img" src="./assets/img/contact_woman 1.png" alt="contact_woman">
           <h2 class="contacts__title">Contact us</h2>
-          <label for="#" class="contacts__label"><span>City</span>  <img src="./assets/icons/arrow_white.svg" alt="arrow-icon"></label>
+          <div class="contacts__dropdown dropdown">
+            <button for="#" class="dropdown__btn"><span id='dropdown__title'>City</span> <i class="dropdown__icon"></i> </button>
+            <div class="dropdown__content" id="dropdown">
+              <a class="dropdown__item" href="#canandaigua">
+                Canandaigua, NY
+              </a>
+              <a class="dropdown__item" href="#newYork">
+                New York City
+              </a>
+              <a class="dropdown__item"href="#yonkers">
+                Yonkers, NY
+              </a>
+              <a class="dropdown__item" href="#sherrill">
+                Sherrill, NY
+              </a>
+            </div>
+            <div class="dropdown-cards">              
+              <div class="dropdown__card card-dropdown" id="canandaigua">
+                <div class="card-dropdown__info">
+                  <div class="card-dropdown__titles">
+                    <span>City:</span>
+                    <span>Phone:</span>
+                    <span>Office adress:</span>
+                  </div>
+                  <div class="card-dropdown__text">
+                    <span class="dropdown__city">Canandaigua, NY</span>
+                    <span>+1	585	393 0001</span>
+                    <span>151 Charlotte Street</span>
+                  </div>
+                </div>
+                <a class="card-dropdown__btn" href="tel:+15853930001">Call us</a>
+              </div>
+              <div class="dropdown__card card-dropdown" id="newYork">
+                <div class="card-dropdown__info">
+                  <div class="card-dropdown__titles">
+                    <span>City:</span>
+                    <span>Phone:</span>
+                    <span>Office adress:</span>
+                  </div>
+                  <div class="card-dropdown__text">
+                    <span class="dropdown__city">New York City</span>
+                    <span>+1	212	456 0002</span>
+                    <span>9 East 91st Street</span>
+                  </div>
+                </div>
+                <a class="card-dropdown__btn" href="tel:++12124560002">Call us</a>
+              </div>
+              <div class="dropdown__card card-dropdown" id="yonkers">
+                <div class="card-dropdown__info">
+                  <div class="card-dropdown__titles" >
+                    <span>City:</span>
+                    <span>Phone:</span>
+                    <span>Office adress:</span>
+                  </div>
+                  <div class="card-dropdown__text">
+                    <span class="dropdown__city">Yonkers, NY</span>
+                    <span>+1	914	678 0003</span>
+                    <span>511 Warburton Ave</span>
+                  </div>
+                </div>
+                <a class="card-dropdown__btn" href="tel:+19146780003">Call us</a>
+              </div>              
+              <div class="dropdown__card card-dropdown" id="sherrill">
+                <div class="card-dropdown__info">
+                  <div class="card-dropdown__titles">
+                    <span>City:</span>
+                    <span>Phone:</span>
+                    <span>Office adress:</span>
+                  </div>
+                  <div class="card-dropdown__text">
+                    <span class="dropdown__city">Sherrill, NY</span>
+                    <span>+1	315	908 0004</span>
+                    <span>14 WEST Noyes BLVD</span>
+                  </div>
+                </div>
+                <a class="card-dropdown__btn" href="tel:+13159080004">Call us</a>
+              </div>
+
+            </div>
+          </div>
         </div>
       </section>
     </main>

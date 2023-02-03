@@ -38,7 +38,10 @@
       line-height: 33px;
     }
   }
-  &__label {
+}
+
+.dropdown {
+  &__btn {
     cursor: pointer;
     height: 50px;
     width: 450px;
@@ -49,6 +52,11 @@
     justify-content: space-between;
     padding: 5px 20px;
     margin-top: 148px;
+    transition: .4s all ease-in-out;
+    &.active {
+      box-shadow: none;
+      background-color: #C1E698;;
+    }
     @include respond(tab-land) {
       margin-top: 100px;
     }
@@ -57,27 +65,155 @@
       margin-top: 80px;
     }
     & span {
-      width: 204px;
       height: 40px;
-      font-family: 'Inter';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
+      @include text-style(20px, 400, "Inter");
       line-height: 40px;
-      letter-spacing: 0.05em;
+      letter-spacing:0.08px;
       color: #717171;
     }
-    & img {
-      padding: 6px;
-      border-radius: 50%;
-      align-self: center;
-      background: #AEA1A1;
-      @include respond(tab-land) {
-        margin-right: 14px;
-      }
+  }
+  &__icon {
+    background-color: #AEA1A1;
+    background-image: url(./assets/icons/arrow_white.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    width: 16px;
+    height: 16px;
+    padding: 7px 6px 7px;
+    border-radius: 50%;
+    @include respond(tab-land) {
+      margin-right: 14px;
+    }
+    @include respond(phone) {
+      margin-right: 0;
+    }
+    &.active {
+      transform: rotate(180deg);
+      background-color: #8BA07E;
+    }
+  }
+  &__content {
+    background: #DCE9D9;
+    display: none;
+    flex-direction: column;
+    width: 450px;
+    padding: 27px 50px 20px 31px;
+    @include respond(phone) {
+      width: 300px;
+    }
+    &.active {
+      transition: .4s ease-in-out all;
+      display: flex;
+    }
+  }
+  &__item {
+    cursor: pointer;
+    @include text-style(16px, 400, "Inter");
+    line-height: 40px;
+    letter-spacing: 0.8px;
+    color: #499A18;
+    transition: .3s all;
+    &:hover {
+      color: #717171;
+      border-bottom: 1px solid #717171;
+    }
+    &:visited {
+      color: #499A18;
+    }
+  }
+}
+// .dropdown-cards {
+// }
+.dropdown__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.card-dropdown {
+  padding: 17px 76px 32px 35px;
+  background: #EDF2EC;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  width: 448px;
+  margin-top: 61px;
+  display: none;
+  &.active {
+    display: flex;
+  }
+  @include respond(phone) {
+    width: 282px;
+    padding: 23px 37px;
+    margin-top: 49px;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+  &__titles {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    /* or 250% */
+
+    letter-spacing:0.08px;
+
+    color: #000000;
+    & span:nth-child(2) {
       @include respond(phone) {
-        margin-right: 0;
+        margin: 15px 0;
       }
     }
+    @include respond(phone) {
+      width: 65px;
+      line-height: 20px;
+    }
+  }
+  &__text {
+    display: flex;
+    margin-left: 17px;
+    flex-direction: column;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    /* or 125% */
+
+    letter-spacing:0.08px;
+
+    color: #717171;
+    @include respond(phone) {
+      margin-left: 5px;
+      line-height: 20px;
+    }
+    & span:nth-child(2) {
+      margin: 22px 0;
+      @include respond(phone) {
+        margin: 15px 0px;
+      }
+    }
+  }
+  &__btn {
+    font-family: 'Inika';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13px;
+  text-align: center;
+  
+  color: #717171;
+  border: 1px solid #E06733;
+  border-radius: 5px;
+  padding: 7px 29px;
+  margin-top: 24px;
+  &:hover {
+    background-color: $color-accent;
+    color: $color-white;
+  }
   }
 }
