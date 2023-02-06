@@ -63,6 +63,7 @@
         background-color: $color-title-accent;
         color: $color-white;
         border-color: $color-title-accent;
+        transition: .4s ease-in-out;
       }
       @include respond(tab-land) {
         width: 161px;
@@ -79,6 +80,7 @@
   }
   &__btn {
     &.active {
+      transition: .4s ease-in-out;
       background-color: $color-accent;
       color: $color-white;
     }
@@ -147,6 +149,7 @@
       margin: 0 auto;
     }
   }
+  transition: .4s ease-in-out;
   &__blur {
     filter: blur(2px);
   }
