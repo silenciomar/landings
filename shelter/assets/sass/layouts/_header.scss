@@ -1,0 +1,45 @@
+.header {
+  background: url(./assets/img/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  padding-top: 30px;
+  &--pets {
+    background: #FFFFFF;
+  }
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__logo-content {
+    & h1 {
+      @include text-style(32px, 400, $color-primary, 'Georgia');
+    }
+    p {
+      @include text-style(13px, 400, $color-white, 'Arial');
+    }
+  }
+  &__nav {
+  }
+}
+.nav {
+  &__bar {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+  }
+  &__item {
+  }
+  &__link {
+    &--active {
+      border-bottom: 3px solid $color-primary;
+    }
+    // &--main {
+    //   color: $color-text;
+    // }
+    // &--main:hover {
+    //   color: #FAFAFA;
+    // }
+    // &--pets {
+    //   color: $color-dark;
+    // }
+  }
+}

@@ -1,0 +1,30 @@
+.footer {
+  background: url(./assets/img/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  padding-top: 56px;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 160px;
+  }
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 234px;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 234px;
+  }
+  &__item {
+    display: flex;
+    gap: 20px;
+  }
+  &__link {
+    @include text-style(20px, 400, $color-primary, 'Georgia');
+  }
+  &__img {
+  }
+}

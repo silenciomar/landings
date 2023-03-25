@@ -1,0 +1,6 @@
+.title {
+  @include text-style(35px, 400, $color-dark, 'Georgia');
+  &--white {
+    color: $color-white;
+  }
+}
