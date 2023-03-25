@@ -1,0 +1,81 @@
+.in-addition {
+  padding: 80px 0 100px;
+  background: #F6F6F6;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  &__img {
+    background-image: url(../../assets/img/donation-dog.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 505px;
+    height: 261px;
+  }
+  &__content {
+    width: 380px;
+    height: 282px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  &__title {
+    width: 320px;
+  }
+  &__subtitle {
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110%;
+    /* identical to box height, or 17px */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.06em;
+    
+    /* color-dark-l */
+    
+    color: #545454;
+  }
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    width: 349px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    /* identical to box height, or 23px */
+    
+    letter-spacing: 0.06em;
+    
+    /* color-dark-l */
+    
+    color: #545454;
+    padding: 10px 15px;
+    background: #F1CDB3;
+    border-radius: 9px;
+    // & img {
+    //   display: inline-block;
+    //   margin-right: 15px;
+    // }
+  }
+  &__text {
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+
+    /* color-dark-m */
+
+    color: #B2B2B2;
+  }
+}

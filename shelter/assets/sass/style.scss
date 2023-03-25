@@ -4,8 +4,12 @@
 @import "base/reset";
 @import "base/base";
 
-@import "components/title";
+@import "components/title_&_text";
 
 @import "layouts/header";
+@import "layouts/not_only";
+@import "layouts/about";
+@import "layouts/help";
+@import "layouts/addition";
 
 @import "layouts/footer";

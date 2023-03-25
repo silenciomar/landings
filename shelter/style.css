@@ -86,6 +86,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 15px;
+  line-height: 160%;
 }
 
 [class*=__container] {
@@ -120,6 +121,9 @@ body {
 }
 
 .title {
+  text-align: left;
+  line-height: 130%;
+  letter-spacing: 0.06em;
   font-size: 35px;
   font-weight: 400;
   color: #545454;
@@ -127,6 +131,10 @@ body {
 }
 .title--white {
   color: #FFF;
+}
+
+.text {
+  color: #4C4C4C;
 }
 
 .header {
@@ -162,6 +170,173 @@ body {
   border-bottom: 3px solid #F1CDB3;
 }
 
+.not_only {
+  padding-top: 180px;
+  background: url(./assets/img/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+}
+.not_only .not_only__container {
+  display: flex;
+  align-items: center;
+}
+.not_only .not_only__img {
+  background-image: url(../../assets/img/start-screen-puppy.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 698px;
+  height: 728px;
+}
+.not_only .not_only__content {
+  width: 460px;
+  height: 322px;
+}
+.not_only .not_only__title {
+  font-size: 44px;
+  line-height: 130%;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.about {
+  padding: 80px 0 110px;
+}
+.about__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+.about__img {
+  background-image: url(../../assets/img/about-pets.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 300px;
+  height: 408px;
+}
+.about__content {
+  width: 430px;
+  height: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.about__title {
+  width: 360px;
+  font-size: 35px;
+  line-height: 130%;
+}
+.help {
+  padding: 80px 0 100px;
+}
+.help__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 60px;
+}
+.help__title {
+  width: 315px;
+  text-align: center;
+}
+.help__content {
+  width: 1029px;
+  height: 281px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 55px 120px;
+}
+.help__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.help__subtitle {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  /* identical to box height, or 23px */
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  /* color-dark-l */
+  color: #545454;
+}
+
+.in-addition {
+  padding: 80px 0 100px;
+  background: #F6F6F6;
+}
+.in-addition__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.in-addition__img {
+  background-image: url(../../assets/img/donation-dog.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 505px;
+  height: 261px;
+}
+.in-addition__content {
+  width: 380px;
+  height: 282px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.in-addition__title {
+  width: 320px;
+}
+.in-addition__subtitle {
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 110%;
+  /* identical to box height, or 17px */
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  /* color-dark-l */
+  color: #545454;
+}
+.in-addition__link {
+  display: flex;
+  justify-content: space-between;
+  width: 349px;
+  font-family: "Georgia";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 115%;
+  /* identical to box height, or 23px */
+  letter-spacing: 0.06em;
+  /* color-dark-l */
+  color: #545454;
+  padding: 10px 15px;
+  background: #F1CDB3;
+  border-radius: 9px;
+}
+.in-addition__text {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* or 150% */
+  display: flex;
+  align-items: center;
+  /* color-dark-m */
+  color: #B2B2B2;
+}
+
 .footer {
   background: url(./assets/img/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
   padding-top: 56px;
@@ -192,6 +367,10 @@ body {
   font-weight: 400;
   color: #F1CDB3;
   font-family: "Georgia";
+}
+.footer__title {
+  line-height: 130%;
+  letter-spacing: 0.06em;
 }
 
 /*# sourceMappingURL=style.css.map */
