@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Our pets</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <div class="wrapper">
@@ -13,27 +14,81 @@
       <div class="header__container">
         <div class="header__logo-content">
           <h1>Cozy House</h1>
-          <p>Shelter for pets in Boston</p>
+          <p class=".header__logo-text header__logo-text--main header__logo-text--pets">Shelter for pets in Boston</p>
         </div>
         <nav class="header__nav nav">
           <ul class="nav__bar">
-            <li class="nav__item">
-              <a href="./main.html" class="nav__link nav__link--pets">About the shelter</a>
+            <li class="nav__item nav__item--pets">
+              <a href="./main.html" class="nav__link">About the shelter</a>
             </li>
-            <li class="nav__item">
-              <a href="" class="nav__link nav__link--pets nav__link--active">Our pets</a>
+            <li class="nav__item nav__item--active2 nav__item--pets">
+              <a href="" class="nav__link">Our pets</a>
             </li>
-            <li class="nav__item">
-              <a href="" class="nav__link nav__link--pets">Help the shelter</a>
+            <li class="nav__item nav__item--pets">
+              <a href="" class="nav__link">Help the shelter</a>
             </li>
-            <li class="nav__item">
-              <a href="#contacts" class="nav__link nav__link--pets">Contacts</a>
+            <li class="nav__item nav__item--pets">
+              <a href="#contacts" class="nav__link">Contacts</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <main class="main">
+      <section class="pets">
+        <div class="pets__container">
+          <h2 class="pets__main-title">Our friends who <br> are looking for a house</h2>
+          <div class="pets__content">
+            <div class="pets__item">
+              <img src="./assets/img/pets-katrine.png" alt="pets-katrine">
+              <p class="pets__title">Katrine</p>
+              <button class="pets__link-info">Learn more</button>
+            </div>
+            <div class="pets__item">
+              <img src="./assets/img/pets-jennifer.png" alt="pets-jennifer">
+              <p class="pets__title">Jennifer</p>
+              <button class="pets__link-info">Learn more</button>
+            </div>
+            <div class="pets__item">
+              <img src="./assets/img/pets-woody.png" alt="pets-woody">
+              <p class="pets__title">Woody</p>
+              <button class="pets__link-info">Learn more</button>
+            </div>
+            <div class="pets__item">
+              <img src="./assets/img/pets-sophia.png" alt="pets-sophia">
+              <p class="pets__title">Sophia</p>
+              <button class="pets__link-info">Learn more</button>
+            </div>
+            <div class="pets__item">
+              <img src="./assets/img/pets-timmy.png" alt="pets-timmy">
+              <p class="pets__title">Timmy</p>
+              <button class="pets__link-info">Learn more</button>
+            </div>
+            <div class="pets__item">
+              <img src="./assets/img/pets-charly.png" alt="pets-charly">
+              <p class="pets__title">Charly</p>
+              <button class="pets__link-info">Learn more</button>
+            </div>
+            <div class="pets__item">
+              <img src="./assets/img/pets-scarlet.png" alt="pets-scarlet">
+              <p class="pets__title">Scarlett</p>
+              <button class="pets__link-info">Learn more</button>
+            </div>
+            <div class="pets__item">
+              <img src="./assets/img/pets-freddie.png" alt="pets-freddie">
+              <p class="pets__title">Freddie</p>
+              <button class="pets__link-info">Learn more</button>
+            </div>
+          </div>
+          <div class="pets__pagination pagination">
+            <button class="pagination__btn btn__disabled"> << </button>
+            <button class="pagination__btn btn__disabled"> < </button>
+            <button class="pagination__btn btn"> 1 </button>
+            <button class="pagination__btn btn__active"> > </button>
+            <button class="pagination__btn btn__active"> >> </button>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer" id="contacts">
       <div class="footer__container">

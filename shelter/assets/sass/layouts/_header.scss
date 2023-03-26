@@ -10,14 +10,58 @@
     align-items: center;
   }
   &__logo-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     & h1 {
       @include text-style(32px, 400, $color-primary, 'Georgia');
+      line-height: 110%;
+      letter-spacing: 0.06em;
     }
-    p {
+    .header__logo-text {
       @include text-style(13px, 400, $color-white, 'Arial');
+      line-height: 100%;
+      letter-spacing: 0.1em;
+      
     }
-  }
-  &__nav {
+    .header__logo-text--main {
+      margin-left: 4px;
+              /* logo_subtitle */
+
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        /* identical to box height */
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.1em;
+
+        /* color-light-xl */
+
+        color: #FFFFFF;
+    }
+    .header__logo-text--pets {
+      margin-left: 4px;
+      /* logo_subtitle */
+
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 15px;
+      /* identical to box height */
+
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.1em;
+
+      /* color-dark-3xl */
+
+      color: #292929;
+    }
   }
 }
 .nav {
@@ -27,19 +71,77 @@
     gap: 35px;
   }
   &__item {
+    height: 24px;
+    font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 160%;
+/* identical to box height, or 24px */
+
+
+/* color-dark-s */
+
+color: #CDCDCD;
+    &--active1 {
+      border-bottom: 3px solid $color-primary;
+      font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 160%;
+/* identical to box height, or 24px */
+
+
+/* color-light-s */
+
+color: #FAFAFA;
+    }
+    &--pets {
+      font-family: 'Arial';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 160%;
+      /* identical to box height, or 24px */
+      
+      
+      /* color-dark-l */
+      
+      color: #545454;
+    }
+    &--active2 {
+      border-bottom: 3px solid $color-primary;
+      font-family: 'Arial';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 160%;
+/* identical to box height, or 24px */
+
+
+/* color-dark-3xl */
+
+color: #292929;
+    }
   }
   &__link {
-    &--active {
-      border-bottom: 3px solid $color-primary;
-    }
+    // font-family: 'Arial';
+    // font-style: normal;
+    // font-weight: 400;
+    // font-size: 15px;
+    // line-height: 160%;
+    // /* identical to box height, or 24px */
+
+
+    // /* color-dark-s */
+
+    // color: #CDCDCD;
     // &--main {
     //   color: $color-text;
     // }
     // &--main:hover {
     //   color: #FAFAFA;
-    // }
-    // &--pets {
-    //   color: $color-dark;
     // }
   }
 }

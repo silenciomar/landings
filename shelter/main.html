@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shelter</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
 </head>
 <body>
   <div class="wrapper">
@@ -13,12 +14,12 @@
       <div class="header__container">
         <div class="header__logo-content">
           <h1>Cozy House</h1>
-          <p>Shelter for pets in Boston</p>
+          <p class=".header__logo-text header__logo-text--main">Shelter for pets in Boston</p>
         </div>
         <nav class="header__nav nav">
           <ul class="nav__bar">
-            <li class="nav__item">
-              <a href="" class="nav__link nav__link--active nav__link--main">About the shelter</a>
+            <li class="nav__item nav__item--active1">
+              <a href="" class="nav__link nav__link nav__link--main">About the shelter</a>
             </li>
             <li class="nav__item">
               <a href="./pets.html" class="nav__link nav__link--main">Our pets</a>
@@ -37,13 +38,13 @@
       <section class="not_only">
         <div class="not_only__container">
           <div class="not_only__content">
-            <h2 class="not_only__title title">Not only people need a house</h2>
+            <h2 class="not_only__title">Not only people need a house</h2>
             <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you
               more than anybody else in the world, you will see!</p>
-              <button class="button">Make a friend</button>
-            </div>
-            <div class="not_only__img"></div>
+            <button class="button">Make a friend</button>
           </div>
+          <div class="not_only__img"></div>
+        </div>
       </section>
       <section class="about">
         <div class="about__container">
@@ -57,6 +58,33 @@
               the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would
               hardly ever leave them alone.</p>
           </div>
+        </div>
+      </section>
+      <section class="friends">
+        <div class="friends__container">
+          <h2 class="friends__title title">Our friends who are looking for a house</h2>
+          <div class="friends__slider slider">
+            <button class="slider__button slider__button--prev"></button>
+            <div class="slider__content">
+              <div class="slider__item">
+                <img src="./assets/img/pets-katrine.png" alt="pets-katrine">
+                <p class="slider__title">Katrine</p>
+                <button class="slider__link-info">Learn more</button>
+              </div>
+              <div class="slider__item">
+                <img src="./assets/img/pets-jennifer.png" alt="pets-jennifer">
+                <p class="slider__title">Jennifer</p>
+                <button class="slider__link-info">Learn more</button>
+              </div>
+              <div class="slider__item">
+                <img src="./assets/img/pets-woody.png" alt="pets-woody">
+                <p class="slider__title">Woody</p>
+                <button class="slider__link-info">Learn more</button>
+              </div>
+            </div>
+            <button class="slider__button slider__button--next"></button>
+          </div>
+          <a href="" class="friends__button button">Get to know the rest</a>
         </div>
       </section>
       <section class="help">
