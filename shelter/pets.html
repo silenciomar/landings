@@ -12,10 +12,10 @@
   <div class="wrapper">
     <header class="header header--pets">
       <div class="header__container">
-        <div class="header__logo-content">
+        <a href="./main.html" class="header__logo-content">
           <h1>Cozy House</h1>
           <p class=".header__logo-text header__logo-text--main header__logo-text--pets">Shelter for pets in Boston</p>
-        </div>
+        </a>
         <nav class="header__nav nav">
           <ul class="nav__bar">
             <li class="nav__item nav__item--pets">
@@ -25,7 +25,7 @@
               <a href="" class="nav__link">Our pets</a>
             </li>
             <li class="nav__item nav__item--pets">
-              <a href="" class="nav__link">Help the shelter</a>
+              <a href="./main.html#help" class="nav__link">Help the shelter</a>
             </li>
             <li class="nav__item nav__item--pets">
               <a href="#contacts" class="nav__link">Contacts</a>
@@ -35,7 +35,7 @@
       </div>
     </header>
     <main class="main">
-      <section class="pets">
+      <section class="pets" id="friend">
         <div class="pets__container">
           <h2 class="pets__main-title">Our friends who <br> are looking for a house</h2>
           <div class="pets__content">
@@ -81,8 +81,8 @@
             </div>
           </div>
           <div class="pets__pagination pagination">
-            <button class="pagination__btn btn__disabled"> << </button>
-            <button class="pagination__btn btn__disabled"> < </button>
+            <button class="pagination__btn btn__disabled"> &lt;&lt; </button>
+            <button class="pagination__btn btn__disabled"> &lt; </button>
             <button class="pagination__btn btn"> 1 </button>
             <button class="pagination__btn btn__active"> > </button>
             <button class="pagination__btn btn__active"> >> </button>
@@ -92,25 +92,29 @@
     </main>
     <footer class="footer" id="contacts">
       <div class="footer__container">
-        <ul class="footer__content">
-          <h3 class="title title--white">For questions and suggestions</h3>
-          <li class="footer__item">
-            <img src="./assets/icons/mail.svg" alt="mail-icon"> <a class="footer__link" href="mailto:email@shelter.com">email@shelter.com</a>
-          </li>
-          <li class="footer__item">
-           <img src="./assets/icons/phone.svg" alt="phone-icon"> <a class="footer__link" href="tel:+136745677554">+13 674 567 75 54</a>
-          </li>
-        </ul>
-        <ul class="footer__content">
+        <div class="footer__content">
+          <h3 class="footer__title title title--white">For questions and suggestions</h3>
+          <ul>
+            <li class="footer__item">
+              <img src="./assets/icons/mail.svg" alt="mail-icon"> <a class="footer__link" href="mailto:email@shelter.com">email@shelter.com</a>
+            </li>
+            <li class="footer__item">
+             <img src="./assets/icons/phone.svg" alt="phone-icon"> <a class="footer__link" href="tel:+136745677554">+13 674 567 75 54</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__content">
           <h3 class="title title--white">We are waiting for your visit</h3>
-          <li class="footer__item">
-            <img src="./assets/icons/pin.svg" alt="geo-icon"> <a class="footer__link" href="https://goo.gl/maps/1DBzgFgmpBnnhXGe6" target="_blank">1 Central Street, Boston
-              (entrance from the store)</a>
-          </li>
-          <li class="footer__item">
-            <img src="./assets/icons/pin.svg" alt="geo-icon"> <a class="footer__link" href="https://goo.gl/maps/EPWGZqZmG9L5J5X47" target="_blank">18 South Park, London </a>
-          </li>
-        </ul>
+          <ul>
+            <li class="footer__item">
+              <img src="./assets/icons/pin.svg" alt="geo-icon"> <a class="footer__link" href="https://goo.gl/maps/1DBzgFgmpBnnhXGe6" target="_blank">1 Central Street, Boston
+                (entrance from the store)</a>
+            </li>
+            <li class="footer__item">
+              <img src="./assets/icons/pin.svg" alt="geo-icon"> <a class="footer__link" href="https://goo.gl/maps/EPWGZqZmG9L5J5X47" target="_blank">18 South Park, London </a>
+            </li>
+          </ul>
+        </div>
         <img class="footer__img" src="./assets/img/footer-puppy.png" alt="footer-puppy">
       </div>
     </footer>
