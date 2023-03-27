@@ -1,6 +1,6 @@
 .footer {
   background: url(./assets/img/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
-  padding-top: 56px;
+  padding-top: 40px;
   &__container {
     display: flex;
     justify-content: space-between;
@@ -13,17 +13,45 @@
     height: 234px;
   }
   &__content {
+    margin-top: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 234px;
+    &:first-of-type {
+      width: 279px;
+      gap: 40px;
+    }
+    &:last-of-type {
+      width: 302px;
+      gap: 30px;
+    }
+  }
+  &__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 114px;
   }
   &__item {
+    cursor: pointer;
+    // @include text-style(20px, 400, $color-primary, 'Georgia');
     display: flex;
     gap: 20px;
+    font-family: 'Georgia';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 115%;
+    /* or 23px */
+    
+    letter-spacing: 0.06em;
+    
+    /* color-primary */
+    
+    color: #F1CDB3;
   }
   &__link {
-    @include text-style(20px, 400, $color-primary, 'Georgia');
   }
   &__img {
   }

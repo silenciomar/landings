@@ -41,6 +41,11 @@
     color: #545454;
   }
   &__link {
+    transition: color .3s;
+    cursor: pointer;
+    &:hover {
+      background: #FDDCC4;
+    }
     display: flex;
     justify-content: space-between;
     width: 349px;
