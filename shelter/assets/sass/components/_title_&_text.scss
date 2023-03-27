@@ -1,0 +1,13 @@
+.title {
+  text-align: left;
+  line-height: 130%;
+  letter-spacing: 0.06em;
+  @include text-style(35px, 400, $color-dark, 'Georgia');
+  &--white {
+    color: $color-white;
+  }
+}
+
+.text {
+  color: #4C4C4C;
+}

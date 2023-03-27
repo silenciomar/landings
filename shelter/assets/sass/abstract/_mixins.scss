@@ -1,0 +1,33 @@
+@mixin text-style ($size, $weight, $color, $family) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+  font-family: $family;
+}
+
+@mixin respond($breakpoint) {
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 767px) { @content };
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 992px) { @content };
+  }
+
+  @if $breakpoint == desktop {
+    @media only screen and (min-width: 993px) { @content };
+  }
+}
+
+@mixin font-face($font-family, $weight, $file-path) {
+  @font-face {
+      font-family: $font-family;
+      font-weight: $weight;
+      font-display: swap;
+      font-style: normal;
+      src: url('#{$file-path}.woff2') format('woff2'),
+      url('#{$file-path}.woff') format('woff'),
+      url('#{$file-path}.ttf') format('truetype');
+  }
+}

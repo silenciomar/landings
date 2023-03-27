@@ -1,0 +1,21 @@
+@import "abstract/mixins";
+@import "abstract/variables";
+
+@import "base/reset";
+@import "base/base";
+
+@import "components/title_&_text";
+@import "components/button";
+@import "components/main-slider";
+@import "components/pagination";
+
+@import "layouts/header";
+@import "layouts/not_only";
+@import "layouts/about";
+@import "layouts/friends";
+@import "layouts/help";
+@import "layouts/addition";
+
+@import "layouts/footer";
+
+@import "layouts/pets";
