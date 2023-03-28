@@ -440,7 +440,7 @@ body {
   gap: 120px;
 }
 .about__img {
-  background-image: url(../../assets/img/about-pets.png);
+  background-image: url(./assets/img/about-pets.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 300px;
@@ -525,7 +525,7 @@ body {
   gap: 30px;
 }
 .in-addition__img {
-  background-image: url(../../assets/img/donation-dog.png);
+  background-image: url(./assets/img/donation-dog.png);
   background-repeat: no-repeat;
   background-position: center;
   width: 505px;
