@@ -6,6 +6,9 @@
     align-items: center;
     justify-content: center;
     gap: 30px;
+    @include respond(tab-land) {
+      flex-direction: column-reverse;
+    }
   }
   &__img {
     background-image: url(./assets/img/donation-dog.png);

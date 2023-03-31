@@ -5,6 +5,11 @@
     display: flex;
     justify-content: space-between;
     gap: 160px;
+    @include respond(tab-land) {
+      gap: 60px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
   }
   &__contacts {
     display: flex;

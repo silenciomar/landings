@@ -162,6 +162,11 @@ body {
   align-items: center;
   gap: 53px;
 }
+@media only screen and (max-width: 992px) {
+  .slider {
+    gap: 12px;
+  }
+}
 
 .slider__button {
   width: 52px;
@@ -185,6 +190,11 @@ body {
   display: flex;
   gap: 90px;
 }
+@media only screen and (max-width: 992px) {
+  .slider__content {
+    gap: 40px;
+  }
+}
 
 .slider__item {
   display: flex;
@@ -200,6 +210,11 @@ body {
 .slider__item:hover {
   background-color: white;
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+@media only screen and (max-width: 992px) {
+  .slider__item:last-of-type {
+    display: none;
+  }
 }
 
 .slider__link-info {
@@ -462,10 +477,16 @@ body {
   justify-content: center;
   gap: 120px;
 }
+@media only screen and (max-width: 992px) {
+  .about__container {
+    flex-direction: column-reverse;
+  }
+}
 .about__img {
   background-image: url(./assets/img/about-pets.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   width: 300px;
   height: 408px;
 }
@@ -481,6 +502,7 @@ body {
   font-size: 35px;
   line-height: 130%;
 }
+
 .friends {
   padding: 80px 0 100px;
   background: #F6F6F6;
@@ -514,13 +536,27 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   gap: 55px 120px;
+}
+@media only screen and (max-width: 992px) {
+  .help__content {
+    justify-content: space-between;
+    width: 630px;
+    height: 490px;
+    gap: 55px 60px;
+  }
 }
 .help__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
+}
+@media only screen and (max-width: 992px) {
+  .help__item {
+    width: 170px;
+  }
 }
 .help__subtitle {
   font-family: "Georgia";
@@ -546,6 +582,11 @@ body {
   align-items: center;
   justify-content: center;
   gap: 30px;
+}
+@media only screen and (max-width: 992px) {
+  .in-addition__container {
+    flex-direction: column-reverse;
+  }
 }
 .in-addition__img {
   background-image: url(./assets/img/donation-dog.png);
@@ -619,6 +660,13 @@ body {
   display: flex;
   justify-content: space-between;
   gap: 160px;
+}
+@media only screen and (max-width: 992px) {
+  .footer__container {
+    gap: 60px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .footer__contacts {
   display: flex;
@@ -697,6 +745,11 @@ body {
   justify-content: center;
   gap: 30px 40px;
 }
+@media only screen and (max-width: 992px) {
+  .pets__content {
+    width: 580px;
+  }
+}
 .pets__item {
   display: flex;
   flex-direction: column;
@@ -711,6 +764,16 @@ body {
 .pets__item:hover {
   background-color: white;
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
+}
+@media only screen and (max-width: 992px) {
+  .pets__item:nth-of-type(8) {
+    display: none;
+  }
+}
+@media only screen and (max-width: 992px) {
+  .pets__item:nth-of-type(7) {
+    display: none;
+  }
 }
 .pets__link-info {
   width: 187px;

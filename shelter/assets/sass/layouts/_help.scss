@@ -17,12 +17,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     gap: 55px 120px;
+    @include respond(tab-land) {
+      justify-content: space-between;
+      width: 630px;
+      height: 490px;
+      gap: 55px 60px;
+    }
   }
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @include respond(tab-land) {
+      width: 170px;
+    }
     gap: 30px;
   }
   &__subtitle {
