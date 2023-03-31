@@ -97,6 +97,17 @@ body {
     width: 1200px;
   }
 }
+@media only screen and (max-width: 992px) {
+  [class*=__container] {
+    width: 708px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  [class*=__container] {
+    max-width: auto;
+    width: unset;
+  }
+}
 
 .wrapper {
   overflow: hidden;
@@ -388,12 +399,24 @@ body {
   justify-content: center;
   gap: 42px;
 }
+@media only screen and (max-width: 992px) {
+  .not_only .not_only__container {
+    flex-direction: column;
+  }
+}
 .not_only .not_only__img {
   background-image: url(./assets/img/start-screen-puppy.png);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   width: 698px;
   height: 728px;
+}
+@media only screen and (max-width: 992px) {
+  .not_only .not_only__img {
+    width: 569px;
+    height: 593px;
+  }
 }
 .not_only .not_only__content {
   margin-bottom: 83px;

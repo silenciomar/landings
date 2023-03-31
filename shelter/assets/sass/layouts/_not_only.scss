@@ -6,13 +6,21 @@
     align-items: center;
     justify-content: center;
     gap: 42px;
+    @include respond(tab-land) {
+      flex-direction: column;
+    }
   }
   .not_only__img {
     background-image: url(./assets/img/start-screen-puppy.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     width: 698px;
     height: 728px;
+    @include respond(tab-land) {
+      width: 569px;
+      height: 593px;
+    }
   }
   .not_only__content {
     margin-bottom: 83px;

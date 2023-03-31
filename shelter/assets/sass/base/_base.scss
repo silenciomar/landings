@@ -16,14 +16,14 @@ body {
     width: 1200px;
   };
 
-  // @include respond(tab-land) {
-  //   width: 708px;
-  // };
+  @include respond(tab-land) {
+    width: 708px;
+  };
 
-  // @include respond(phone) {
-  //   max-width: auto;
-  //   width: unset;
-  // };
+  @include respond(phone) {
+    max-width: auto;
+    width: unset;
+  };
 }
 .wrapper {
   overflow: hidden;
