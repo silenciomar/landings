@@ -3,6 +3,9 @@
   line-height: 130%;
   letter-spacing: 0.06em;
   @include text-style(35px, 400, $color-dark, 'Georgia');
+  @include respond(phone) {
+    font-size: 25px;
+  }
   &--white {
     color: $color-white;
   }
@@ -10,4 +13,7 @@
 
 .text {
   color: #4C4C4C;
+  @include respond(phone) {
+    text-align: center;
+  }
 }

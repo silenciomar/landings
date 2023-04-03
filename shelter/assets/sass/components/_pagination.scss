@@ -1,6 +1,13 @@
 .pagination {
   display: flex;
   gap: 20px;
+  @include respond(tab-land) {
+    margin-top: 8px;
+  }
+  @include respond(phone) {
+    gap: 10px;
+    margin: 0;
+  }
   .pagination__btn {
     width: 52px;
     height: 52px;

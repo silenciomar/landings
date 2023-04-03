@@ -1,18 +1,39 @@
 .not_only {
   padding-top: 90px;
   background: url(./assets/img/noise_transparent@2x.png), radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%), #211F20;
+  @include respond(tab-land) {
+    padding-top: 60px;
+  }
   .not_only__container {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 42px;
+    @include respond(tab-land) {
+      flex-direction: column;
+      gap: 16px;
+    }
+    @include respond(phone) {
+      gap: 75px;
+    }
   }
   .not_only__img {
     background-image: url(./assets/img/start-screen-puppy.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-size: contain;
     width: 698px;
     height: 728px;
+    @include respond(tab-land) {
+      width: 569px;
+      height: 593px;
+      align-self: flex-end;
+    }
+    @include respond(phone) {
+      width: 260px;
+      height: 277px;
+      align-self: flex-end;
+    }
   }
   .not_only__content {
     margin-bottom: 83px;
@@ -22,42 +43,67 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 42px;
+    @include respond(phone) {
+      margin-bottom: 0;
+    }
+    @include respond(phone) {
+      width: auto;
+    }
     & p {
+
       font-family: 'Arial';
 font-style: normal;
 font-weight: 400;
 font-size: 15px;
+text-align: left;
 line-height: 160%;
-/* or 24px */
-
-display: flex;
-align-items: center;
-
-/* color-dark-s */
 
 color: #CDCDCD;
+/* or 24px */
+@include respond(phone) {
+  text-align: center;
+  width: 300px;
+}
+
+/* color-dark-s */
+    }
+    & a {
+    @include respond(tab-land) {
+      align-self: center;
+    }
     }
   }
-  .not_only__title {
-    width: 310px;
-    // font-size: 44px;
-    // line-height: 130%;
-    // display: flex;
-    // align-items: center;
-    // color: #FFFFFF;
-
-    font-family: 'Georgia';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 44px;
-    line-height: 130%;
-    /* or 57px */
-    
-    display: flex;
-    align-items: center;
-    
-    /* color-light-xl */
-    
-    color: #FFFFFF;
+}
+.not_only__title {
+  width: 310px;
+  // font-size: 44px;
+  // line-height: 130%;
+  // display: flex;
+  // align-items: center;
+  // color: #FFFFFF;
+  letter-spacing: 0.06em;
+  font-family: 'Georgia';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 130%;
+  /* or 57px */
+  
+  display: flex;
+  align-items: center;
+  
+  /* color-light-xl */
+  
+  color: #FFFFFF;
+  @include respond(tab-land) {
+    letter-spacing: 0;
+    text-align: left;
+    width: 315px;
+  }
+  @include respond(phone) {
+    margin: 0 auto;
+    width: 230px;
+    font-size: 25px;
+    text-align: center;
   }
 }
