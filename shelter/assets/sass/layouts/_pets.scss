@@ -1,11 +1,23 @@
 .pets {
   background: #F6F6F6;
   padding: 80px 0 100px;
+  @include respond(tab-land) {
+    padding: 80px 0 75px;
+  }
+  @include respond(phone) {
+    padding: 42px 0 42px;
+  }
   &__container {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 60px;
+    @include respond(tab-land) {
+      gap: 30px;
+    }
+    @include respond(phone) {
+      gap: 42px;
+    }
   }
   &__main-title {
     font-family: 'Georgia';
@@ -23,6 +35,12 @@
     /* color-dark-l */
 
     color: #545454;
+    @include respond(phone) {
+      width: 300px;
+      text-align: center;
+      font-size: 25px;
+      margin: 0 auto;
+    }
   }
   &__content {
     width: 1200px;
@@ -32,6 +50,10 @@
     gap: 30px 40px;
     @include respond(tab-land) {
       width: 580px;
+    }
+    @include respond(phone) {
+      width: 280px;
+      gap: 30px;
     }
   }
   &__item {
@@ -55,6 +77,21 @@
     }
     &:nth-of-type(7) {
       @include respond(tab-land) {
+        display: none;
+      }
+    }
+    &:nth-of-type(6) {
+      @include respond(phone) {
+        display: none;
+      }
+    }
+    &:nth-of-type(5) {
+      @include respond(phone) {
+        display: none;
+      }
+    }
+    &:nth-of-type(4) {
+      @include respond(phone) {
         display: none;
       }
     }
@@ -98,6 +135,7 @@
   /* color-dark-l */
   
   color: #545454;
+
   }
 }
 

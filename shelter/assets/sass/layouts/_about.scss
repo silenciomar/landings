@@ -1,5 +1,8 @@
 .about {
   padding: 80px 0 100px;
+  @include respond(phone) {
+    padding: 42px 0 42px;
+  }
   &__container {
     display: flex;
     align-items: center;
@@ -7,6 +10,10 @@
     gap: 120px;
     @include respond(tab-land) {
       flex-direction: column-reverse;
+      gap: 80px;
+    }
+    @include respond(phone) {
+      gap: 42px;
     }
   }
   &__img {
@@ -16,6 +23,10 @@
     background-size: contain;
     width: 300px;
     height: 408px;
+    @include respond(phone) {
+      width: 260px;
+      height: 354px;
+    }
   }
   &__content {
     width: 430px;
@@ -23,10 +34,26 @@
     display: flex;
     flex-direction: column;
     gap: 25px;
+    @include respond(phone) {
+      align-items: center;
+      width: 270px;
+      height: auto;
+      gap: 22px;
+    }
   }
   &__title {
     width: 360px;
     font-size: 35px;
     line-height: 130%;
+    @include respond(phone) {
+      width: 280px;
+      font-size: 25px;
+      text-align: center;
+    }
+  }
+  &__text {
+    @include respond(phone) {
+      text-align: justify;
+    }
   }
 }

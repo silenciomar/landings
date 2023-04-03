@@ -21,7 +21,7 @@ body {
   };
 
   @include respond(phone) {
-    max-width: auto;
+    max-width: 280px;
     width: unset;
   };
 }

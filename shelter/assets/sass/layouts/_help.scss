@@ -1,15 +1,26 @@
 .help {
   padding: 80px 0 100px;
+  @include respond(phone) {
+    padding: 42px 0 42px;
+  }
   &__container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 60px;
+    @include respond(phone) {
+      gap: 42px;
+    }
   }
   &__title {
     width: 315px;
     text-align: center;
+    @include respond(phone) {
+      margin: 0 auto;
+      width: 222px;
+      font-size: 25px;
+    }
   }
   &__content {
     width: 1029px;
@@ -20,20 +31,35 @@
     align-items: center;
     gap: 55px 120px;
     @include respond(tab-land) {
-      justify-content: space-between;
+      height: auto;
       width: 630px;
-      height: 490px;
-      gap: 55px 60px;
+      column-gap: 60px;
+    }
+    @include respond(phone) {
+      height: auto;
+      width: 290px;
+      gap: 30px;
+      justify-content: flex-start;
     }
   }
   &__item {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 30px;
     @include respond(tab-land) {
       width: 170px;
     }
-    gap: 30px;
+    @include respond(phone) {
+      width: 130px;
+      gap: 20px;
+    }
+    & img {
+      @include respond(phone) {
+        width: 46px;
+        height: 49px;
+      }
+    }
   }
   &__subtitle {
     font-family: 'Georgia';
@@ -51,5 +77,8 @@
     /* color-dark-l */
 
     color: #545454;
+    @include respond(phone) {
+      font-size: 15px;
+    }
   }
 }

@@ -66,6 +66,9 @@
   }
 }
 .nav {
+  @include respond(phone) {
+    display: none;
+  }
   &__bar {
     display: flex;
     justify-content: space-between;
