@@ -1,7 +1,7 @@
 .burger-menu {
   top: 0;
-  right: -100%;
-  width: 100%;
+  right: -80%;
+  width: 80%;
   height: 100%;
   padding: 35px;
   background: #292929;
@@ -16,16 +16,21 @@
   }
   &__item {
     margin-bottom: 15px;
+    color: #CDCDCD;
     &:last-child {
       margin-bottom: 0;
     }
+    color: #CDCDCD;
+transition: color .3s;
+&:hover {
+  color: #FAFAFA;
+}
   }
   &__link {
 
     text-transform: uppercase;
-    color: #010201;
     &:hover {
-      color: pink;
+      // color: pink;
     }
   }
 }
